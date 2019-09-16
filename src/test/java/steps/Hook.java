@@ -11,8 +11,10 @@ public class Hook extends BaseUtil {
 
     @Before
     public void InitializeTest(Scenario scenario) {
-        //Chrome driver
+        //Chrome driver windows
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\drivers\\chromedriver.exe");
+        //Chrome driver mac
+        //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/drivers/chromedriver");
         Driver = new ChromeDriver();
         Driver.manage().window().maximize();
         Driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
