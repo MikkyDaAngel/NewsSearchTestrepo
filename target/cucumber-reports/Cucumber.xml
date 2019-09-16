@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.729451">
+<testcase classname="Example feature" name="Searching Google for Guidance Tone Article" time="25.729451">
+<system-out><![CDATA[Given I navigate to "https://www.theguardian.com/tone/news".................passed
+When I select the first news article........................................passed
+And I navigate to second site "https://www.google.co.uk"....................passed
+And I search for the article................................................passed
+Then I should see the search result on "the article"........................passed
+]]></system-out>
+</testcase>
+</testsuite>
